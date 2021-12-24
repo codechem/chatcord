@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  background-color: #1a202c;
+  color: #fff;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  margin: 0 0 16px 0;
+}
+
+select {
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  padding: 6px; 
+  outline: 1px #8ea1e1 solid;
+  width: 100%;
+}
+
+select:hover {
+  outline: 2px solid #7289da;
+}
+
+select option {
+  background-color: #2d3748;
+}
+
+h3 {
+  margin: 0 0 16px 0;
+}
+
+
+a {
+  color: #7289da;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #2d3748;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.auth-input {
+  background-color: #4a5568;
+  border: none;
+  outline: 2px transparent solid;
+  border-radius: 12px;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 8px;
+  transition: background-color 0.2s ease;
+  transition: outline 0.4s ease;
+  margin-top: 8px;
+}
+
+.auth-input:hover {
+  background-color: #4a5568;
+  outline: 2px #8ea1e1 solid;
+}
+
+.auth-input:focus {
+  outline: #7289da solid 3px;
+}
+
+.auth-input:placeholder {
+  color: #718096;
+}
+
+.auth-button {
+  background-color: #7289da;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-top: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.auth-button:hover {
+  background-color: #8ea1e1;
+}
+
+.auth-helper-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.input {
+  display: flex;
+  width: 100%;
+}
+
+.chat-box {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.message-input {
+  background-color: #4a5568;
+  border: none;
+  outline: 2px transparent solid;
+  border-radius: 12px;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 8px;
+  transition: background-color 0.2s ease;
+  transition: outline 0.4s ease;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.message-input:hover {
+  background-color: #4a5568;
+  outline: 2px #8ea1e1 solid;
+}
+
+.message-input:focus {
+  outline: #7289da solid 3px;
+}
+
+.message-container {
+  display: flex;
+  width: fit-content;
+  max-width: 400px;
+  word-break: break-word;
+  margin: 0px 0px 10px 0px;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #7289da;
+}
+
+.send-button {
+  background-color: #99aab5;
+  border: none;
+  color: white;
+  padding: 5px 40px;
+}
+
+.send-button {
+  background-color: #7289da;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-left: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.send-button:hover {
+  background-color: #8ea1e1;
+}
+
+.time {
+  padding: 10px 10px;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 10px;
+  align-items: center;
+  color: gray;
+}
+
+.username {
+  display: flex;
+  width: 100%;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.message-and-time {
+  display: flex;
+}
+
+.modal {
+  display: flex;
+  height: 100vh;
+  background-color: #7289da;
+  margin: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.other-user {
+  align-self: flex-end;
+}

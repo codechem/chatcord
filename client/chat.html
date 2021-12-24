@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chatcord</title>
+</head>
+
+<body>
+    <main class="root">
+        <div class="chat-box"></div>
+        <div class="input">
+            <form id="chat" onsubmit="sendMessage(event)">
+                <input id="message" type="text" placeholder="Type something..." required autocomplete="off"
+                    spellcheck="true" class="message-input" />
+                <button class="send-button" type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.2/qs.min.js"
+        integrity="sha512-ErYZLDi4WRoox2JhOIADWBydTRhMJ0KIXnv5C1GvuY8YooLGapnebaM3iRGhwS6/E9ONXj0MRXp6bhu73sdFkg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./common.js"></script>
+    <script src="./chat.js"></script>
+</body>
+
+</html>

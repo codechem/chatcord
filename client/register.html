@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chatcord</title>
+</head>
+
+<body>
+    <main class="root">
+        <div class="auth-container">
+            <form onsubmit="register(event)">
+                <div class="auth-form">
+                    <h1>Register</h1>
+                    <input type="text" name="username" id="username" placeholder="Enter username" required
+                        class="auth-input" autocomplete="off" />
+                    <input type="password" name="password" id="password" placeholder="Enter password" required
+                        class="auth-input" autocomplete="off" />
+                    <button class="auth-button" type="submit">Register</button>
+                    <div class="auth-helper-text">
+                        <p>OR <a href="./">login</a> if you ALREADY have an account.</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="./register.js"></script>
+</body>
+
+</html>
